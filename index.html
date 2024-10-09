@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<!-- saved from url=(0059)file:///C:/Users/WengYinHo/Desktop/BeautifulChem/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test - 2024</title>
     <style>
         table {
             border: none; /* No outer border on the table */
             outline: none; /* Remove any outline if present */
             border-collapse: collapse;
-            width: 100%;
+            width: 70%;
+            color:white;
         }
 
         th{
@@ -17,7 +18,7 @@
             text-align: left;
             font-size: 11px;
             font-family: "Times New Roman", Times, serif;
-            border-right: 1px solid white;
+            border-right: 1px solid white ;
             border-bottom: 1px solid white;
         }
 
@@ -47,6 +48,24 @@
         .year-row {
             cursor: pointer;
         }
+
+        .add-button {
+    background-color: rgba(128, 128, 128, 0.3); /* Grey transparent background */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    width: 15px; /* Set width */
+    height: 15px; /* Set height */
+    font-size: 8px; /* Size of the plus symbol */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content inside */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    outline: none; /* Remove outline when clicked */
+    margin-right:5px;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
     </style>
     <script>
         // Toggle the visibility of all month and day rows under the year
@@ -74,9 +93,7 @@
         }
     </script>
 </head>
-<body>
-
-    <table style="color:white;">
+<body>   <table>
         <thead>
             <tr>
                 <th>Year</th>
@@ -88,1351 +105,1546 @@
         <tbody>
             <!-- Main Year Row -->
             <tr id="year-row" onclick="toggleYear()">
-                <td style="cursor: pointer;">2024</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+                <td style="cursor: pointer;">   <button class="add-button" style="display:inline;">+</button>
+                    2024</td>
+                    <td style="text-align:right">868</td>
+                    <td style="text-align:right">0</td>
+                    <td style="text-align:right">0</td>
             </tr>
 
             <!-- January -->
-            <tr id="January" class="year-row hidden-month" onclick="toggleMonth('January')" style="cursor: pointer;">
-                <td>January</td>
-                <td>868</td>
-                <td>0</td>
-                <td>868</td>
+            <tr id="January" class="year-row hidden-month" onclick="toggleMonth('January')" style="cursor: pointer; display: table-row;">
+                <td>  <button class="add-button" style="display:inline;">+</button>January</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
         
-            <tr class="January hidden-row hidden-day">
-                <td>1</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">1</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>2</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">2</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>3</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">3</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>4</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">4</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>5</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">5</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>6</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">6</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>7</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">7</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>8</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">8</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>9</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">9</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>10</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">10</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>11</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">11</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>12</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">12</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>13</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">13</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>14</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">14</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>15</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">15</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>16</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">16</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>17</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">17</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>18</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">18</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>19</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">19</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>20</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">20</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>21</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">21</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>22</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">22</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td></tr>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">23</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>23</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">24</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>24</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">25</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>25</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">26</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>26</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">27</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>27</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">28</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>28</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">29</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>29</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">30</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>30</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="January hidden-row hidden-day">
-                <td>31</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+            <tr class="January hidden-row hidden-day" style="display: none;">
+                <td style="text-align:center;">31</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             
             
 
             <!-- February -->
-            <tr id="February" class="year-row hidden-month" onclick="toggleMonth('February')" style="cursor: pointer;">
-                <td>February</td>
-                <td>860</td>
-                <td>2</td>
-                <td>2</td>
+            <tr id="February" class="year-row hidden-month" onclick="toggleMonth('February')" style="cursor: pointer; display: table-row;">
+                <td> <button class="add-button" style="display:inline;">+</button> February</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
 
             <tr class="February hidden-row hidden-day">
-                <td>1</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>2</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">2</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>3</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">3</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>4</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">4</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>5</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>6</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">6</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>7</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">7</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>8</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">8</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>9</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">9</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>10</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">10</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>11</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">11</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>12</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">12</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>13</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">13</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>14</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">14</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>15</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">15</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>16</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">16</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>17</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">17</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>18</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">18</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>19</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">19</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>20</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">20</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>21</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">21</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>22</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">22</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>23</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">23</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>24</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">24</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>25</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">25</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>26</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">26</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>27</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">27</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="February hidden-row hidden-day">
-                <td>28</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-
-            
-            <tr class="February hidden-row hidden-day">
-                <td>29</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-
-            <tr id="March" class="year-row hidden-month" onclick="toggleMonth('March')" style="cursor: pointer;">
-                <td>March</td>
-                <td>860</td>
-                <td>2</td>
-                <td>2</td>
-            </tr>
-
-
-            <tr class="March hidden-row hidden-day">
-                <td>1</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>2</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>3</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>4</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>5</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>6</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>7</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>8</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>9</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>10</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>11</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>12</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>13</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>14</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>15</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>16</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>17</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>18</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>19</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>20</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>21</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>22</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>23</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>24</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>25</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>26</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>27</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>28</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>29</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>30</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="March hidden-row hidden-day">
-                <td>31</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">28</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
 
             
-            <tr id="April" class="year-row hidden-month" onclick="toggleMonth('April')" style="cursor: pointer;">
-                <td>April</td>
-                <td>860</td>
-                <td>2</td>
-                <td>2</td>
+            <tr class="February hidden-row hidden-day">
+                <td style="text-align:center;">29</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+
+            <tr id="March" class="year-row hidden-month" onclick="toggleMonth('March')" style="cursor: pointer; display: table-row;">
+                <td> <button class="add-button" style="display:inline;">+</button>March</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+
+
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">1</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">2</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">3</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">4</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">5</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">6</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">7</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">8</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">9</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">10</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">11</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">12</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">13</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">14</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">15</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">16</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">17</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">18</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">19</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">20</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">21</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">22</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">23</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">24</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">25</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">26</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">27</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">28</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">29</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">30</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="March hidden-row hidden-day">
+                <td style="text-align:center;">31</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+
+            
+            <tr id="April" class="year-row hidden-month" onclick="toggleMonth('April')" style="cursor: pointer; display: table-row;">
+                <td>  <button class="add-button" style="display:inline;">+</button>April</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
 
 
             <tr class="April hidden-row hidden-day">
-                <td>1</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>2</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">2</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>3</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">3</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>4</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">4</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>5</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>6</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">6</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>7</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">7</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>8</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">8</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>9</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">9</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>10</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">10</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>11</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">11</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>12</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">12</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>13</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">13</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>14</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">14</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>15</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">15</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>16</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">16</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>17</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">17</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>18</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">18</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>19</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">19</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>20</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">20</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>21</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">21</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>22</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">22</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>23</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">23</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>24</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">24</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>25</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">25</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>26</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">26</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>27</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">27</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>28</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">28</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>29</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">29</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="April hidden-row hidden-day">
-                <td>30</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">30</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
 
-            <tr id="May" class="year-row hidden-month" onclick="toggleMonth('May')" style="cursor: pointer;">
-                <td>May</td>
-                <td>860</td>
-                <td>2</td>
-                <td>2</td>
+            <tr id="May" class="year-row hidden-month" onclick="toggleMonth('May')" style="cursor: pointer; display: table-row;">
+                <td>  <button class="add-button" style="display:inline;">+</button>May</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>1</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>2</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">2</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>3</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">3</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>4</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">4</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>5</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>6</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">6</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>7</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">7</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>8</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">8</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>9</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">9</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>10</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">10</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>11</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">11</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>12</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">12</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>13</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">13</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>14</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">14</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>15</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">15</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>16</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">16</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>17</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">17</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>18</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">18</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>19</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">19</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>20</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">20</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>21</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">21</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>22</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">22</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>23</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">23</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>24</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">24</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>25</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">25</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>26</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">26</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>27</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">27</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>28</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">28</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>29</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">29</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>30</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">30</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="May hidden-row hidden-day">
-                <td>31</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">31</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             
             
-            <tr id="June" class="year-row hidden-month" onclick="toggleMonth('June')" style="cursor: pointer;">
-                <td>June</td>
-                <td>860</td>
-                <td>2</td>
-                <td>2</td>
+            <tr id="June" class="year-row hidden-month" onclick="toggleMonth('June')" style="cursor: pointer; display: table-row;">
+                <td> <button class="add-button" style="display:inline;">+</button>June</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
 
             <tr class="June hidden-row hidden-day">
-                <td>1</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>2</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">2</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>3</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">3</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>4</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">4</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>5</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>6</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">6</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>7</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">7</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>8</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">8</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>9</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">9</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>10</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">10</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>11</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">11</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>12</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">12</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>13</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">13</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>14</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">14</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>15</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">15</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>16</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">16</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>17</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">17</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>18</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">18</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>19</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">19</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>20</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">20</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>21</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">21</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>22</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">22</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>23</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">23</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>24</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">24</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>25</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">25</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>26</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">26</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>27</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">27</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>28</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">28</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>29</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">29</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="June hidden-row hidden-day">
-                <td>30</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">30</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             
     
-            <tr id="July" class="year-row hidden-month" onclick="toggleMonth('July')" style="cursor: pointer;">
-                <td>July</td>
-                <td>860</td>
-                <td>2</td>
-                <td>2</td>
+            <tr id="July" class="year-row hidden-month" onclick="toggleMonth('July')" style="cursor: pointer; display: table-row;">
+                <td> <button class="add-button" style="display:inline;">+</button>July</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
 
 
             <tr class="July hidden-row hidden-day">
-                <td>1</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>2</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">2</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>3</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">3</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>4</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">4</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>5</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>6</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">6</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>7</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">7</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>8</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">8</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>9</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">9</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>10</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">10</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>11</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">11</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>12</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">12</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>13</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">13</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>14</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">14</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>15</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">15</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>16</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">16</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
-                <td>17</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">17</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="July hidden-row hidden-day">
+                <td style="text-align:center;">18</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="July hidden-row hidden-day">
+                <td style="text-align:center;">19</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="July hidden-row hidden-day">
+                <td style="text-align:center;">20</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="July hidden-row hidden-day">
+                <td style="text-align:center;">21</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="July hidden-row hidden-day">
+                <td style="text-align:center;">22</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="July hidden-row hidden-day">
+                <td style="text-align:center;">23</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="July hidden-row hidden-day">
+                <td style="text-align:center;">24</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="July hidden-row hidden-day">
+                <td style="text-align:center;">25</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="July hidden-row hidden-day">
+                <td style="text-align:center;">26</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="July hidden-row hidden-day">
+                <td style="text-align:center;">27</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="July hidden-row hidden-day">
+                <td style="text-align:center;">28</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="July hidden-row hidden-day">
+                <td style="text-align:center;">29</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="July hidden-row hidden-day">
+                <td style="text-align:center;">30</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="July hidden-row hidden-day">
+                <td style="text-align:center;">31</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+
+            
+            <tr id="August" class="year-row hidden-month" onclick="toggleMonth('August')" style="cursor: pointer; display: table-row;">
+                <td> <button class="add-button" style="display:inline;">+</button>August</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">1</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">2</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">3</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">4</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">5</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">6</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">7</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">8</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">9</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">10</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">11</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">12</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">13</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">14</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">15</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">16</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
+                <td style="text-align:center;">17</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
+            </tr>
+            <tr class="August hidden-row hidden-day">
                 <td>18</td>
                 <td>868</td>
                 <td>0</td>
                 <td>0</td>
             </tr>
-            <tr class="July hidden-row hidden-day">
+            <tr class="August hidden-row hidden-day">
                 <td>19</td>
                 <td>868</td>
                 <td>0</td>
                 <td>0</td>
             </tr>
-            <tr class="July hidden-row hidden-day">
+            <tr class="August hidden-row hidden-day">
                 <td>20</td>
                 <td>868</td>
                 <td>0</td>
                 <td>0</td>
             </tr>
-            <tr class="July hidden-row hidden-day">
+            <tr class="August hidden-row hidden-day">
                 <td>21</td>
                 <td>868</td>
                 <td>0</td>
                 <td>0</td>
             </tr>
-            <tr class="July hidden-row hidden-day">
+            <tr class="August hidden-row hidden-day">
                 <td>22</td>
                 <td>868</td>
                 <td>0</td>
                 <td>0</td>
             </tr>
-            <tr class="July hidden-row hidden-day">
+            <tr class="August hidden-row hidden-day">
                 <td>23</td>
                 <td>868</td>
                 <td>0</td>
                 <td>0</td>
             </tr>
-            <tr class="July hidden-row hidden-day">
+            <tr class="August hidden-row hidden-day">
                 <td>24</td>
                 <td>868</td>
                 <td>0</td>
                 <td>0</td>
             </tr>
-            <tr class="July hidden-row hidden-day">
+            <tr class="August hidden-row hidden-day">
                 <td>25</td>
                 <td>868</td>
                 <td>0</td>
                 <td>0</td>
             </tr>
-            <tr class="July hidden-row hidden-day">
+            <tr class="August hidden-row hidden-day">
                 <td>26</td>
                 <td>868</td>
                 <td>0</td>
                 <td>0</td>
             </tr>
-            <tr class="July hidden-row hidden-day">
+            <tr class="August hidden-row hidden-day">
                 <td>27</td>
                 <td>868</td>
                 <td>0</td>
                 <td>0</td>
             </tr>
-            <tr class="July hidden-row hidden-day">
+            <tr class="August hidden-row hidden-day">
                 <td>28</td>
                 <td>868</td>
                 <td>0</td>
                 <td>0</td>
             </tr>
-            <tr class="July hidden-row hidden-day">
+            <tr class="August hidden-row hidden-day">
                 <td>29</td>
                 <td>868</td>
                 <td>0</td>
                 <td>0</td>
             </tr>
-            <tr class="July hidden-row hidden-day">
+            <tr class="August hidden-row hidden-day">
                 <td>30</td>
                 <td>868</td>
                 <td>0</td>
                 <td>0</td>
             </tr>
-            <tr class="July hidden-row hidden-day">
+            <tr class="August hidden-row hidden-day">
                 <td>31</td>
                 <td>868</td>
                 <td>0</td>
@@ -1440,204 +1652,9 @@
             </tr>
 
             
-            <tr id="August" class="year-row hidden-month" onclick="toggleMonth('August')" style="cursor: pointer;">
-                <td>August</td>
-                <td>860</td>
-                <td>2</td>
-                <td>2</td>
-            </tr>
 
-            <tr class="August hidden-row hidden-day">
-                <td>1</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>2</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>3</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>4</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>5</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>6</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>7</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>8</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>9</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>10</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>11</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>12</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>13</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>14</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>15</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>16</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>17</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>18</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>19</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>20</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>21</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>22</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>23</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>24</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>25</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>26</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>27</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>28</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>29</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>30</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="August hidden-row hidden-day">
-                <td>31</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-
-            
-
-            <tr id="September" class="year-row hidden-month" onclick="toggleMonth('September')" style="cursor: pointer;">
-                <td>September</td>
+            <tr id="September" class="year-row hidden-month" onclick="toggleMonth('September')" style="cursor: pointer; display: table-row;">
+                <td> <button class="add-button" style="display:inline;">+</button>September</td>
                 <td>860</td>
                 <td>2</td>
                 <td>2</td>
@@ -1826,23 +1843,23 @@
 
             
 
-            <tr id="October" class="year-row hidden-month" onclick="toggleMonth('October')" style="cursor: pointer;">
-                <td>October</td>
-                <td>860</td>
-                <td>2</td>
-                <td>2</td>
+            <tr id="October" class="year-row hidden-month" onclick="toggleMonth('October')" style="cursor: pointer; display: table-row;">
+                <td> <button class="add-button" style="display:inline;">+</button>October</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="October hidden-row hidden-day">
-                <td>1</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="October hidden-row hidden-day">
-                <td>2</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">2</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="October hidden-row hidden-day">
                 <td>3</td>
@@ -2020,8 +2037,8 @@
             </tr>
             
 
-            <tr id="November" class="year-row hidden-month" onclick="toggleMonth('November')" style="cursor: pointer;">
-                <td>November</td>
+            <tr id="November" class="year-row hidden-month" onclick="toggleMonth('November')" style="cursor: pointer; display: table-row;">
+                <td> <button class="add-button" style="display:inline;">+</button>November</td>
                 <td>860</td>
                 <td>2</td>
                 <td>2</td>
@@ -2202,209 +2219,210 @@
                 <td>0</td>
             </tr>
             <tr class="November hidden-row hidden-day">
-                <td>30</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">30</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             
-            <tr id="December" class="year-row hidden-month" onclick="toggleMonth('December')" style="cursor: pointer;">
-                <td>December</td>
-                <td>860</td>
-                <td>2</td>
-                <td>2</td>
+            <tr id="December" class="year-row hidden-month" onclick="toggleMonth('December')" style="cursor: pointer; display: table-row;">
+                <td> <button class="add-button" style="display:inline;">+</button>December</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
 
             <tr class="December hidden-row hidden-day">
-                <td>1</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>2</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">2</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>3</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">3</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>4</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">4</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>5</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>6</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">6</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>7</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">7</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>8</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">8</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>9</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">9</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>10</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">10</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>11</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">11</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>12</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">12</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>13</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">13</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>14</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">14</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>15</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">15</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>16</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">16</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>17</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">17</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>18</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">18</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>19</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">19</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>20</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">20</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>21</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">21</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>22</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">22</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>23</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">23</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>24</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">24</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>25</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">25</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>26</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">26</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>27</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">27</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>28</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">28</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>29</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">29</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>30</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">30</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
             <tr class="December hidden-row hidden-day">
-                <td>31</td>
-                <td>868</td>
-                <td>0</td>
-                <td>0</td>
+                <td style="text-align:center;">31</td>
+                <td style="text-align:right">868</td>
+                <td style="text-align:right">0</td>
+                <td style="text-align:right">0</td>
             </tr>
 
             
         </tbody>
     </table>
 
-</body>
-</html>
+
+
+</body></html>
